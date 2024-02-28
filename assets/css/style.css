@@ -1,0 +1,71 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Center the card */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Style the weather card */
+.weather-card {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 20px;
+    width: 450px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(to bottom right, #ffcc00, #ff6699);
+}
+
+/* Search input and button */
+
+.search-container{
+    text-align: center;
+}
+
+select{
+    width: 70%;
+    margin: 10px 0px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/* Weather image and city name */
+.weather-content img {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+    height: 150px;
+}
+.city-name {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 30px;
+    font-size: 30px;
+}
+
+/* Weather details */
+.weather-details {
+    margin: 20% 10% 0 10%;
+    display: flex;
+    justify-content: space-between;
+}
+.weather-details img {
+    width: 20px;
+    margin-right: 5px;
+    height: 28px;
+}
+.weather-details p {
+    font-size: 28px;
+}
+
+.humidity , .winds{
+    display: flex;
+    align-items: center;
+}

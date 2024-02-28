@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="weather-card">
+      <div class="search-container">
+        <select name="" id="" class="country" onchange="countryload()">
+          <option value="">Select Country</option>
+        </select>
+        <select name="" id="" class="state">
+          <option value="">Select State</option>
+        </select>
+        <select name="" id="" class="city">
+          <option value="">Select City</option>
+        </select>   
+      </div>
+      <div class="weather-content">
+        <img
+          src="assets/images/drizzle.png"
+          class="weather-img"
+          alt="Current Weather"
+        />
+        <p class="city-name">Tokyo</p>
+      </div>
+      <div class="weather-details">
+        <div class="humidity">
+          <img src="assets/images/humidity.png" />
+          <p class="humidity-value">65%</p>
+        </div>
+        <div class="winds">
+          <img src="assets/images/wind.png" alt="Wind" />
+          <p class="wind-value">10 km/h</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- jquery.js  -->
+    <script src="assets/js/code.jquery.com_jquery-3.7.1.min.js"></script>
+    <!-- main.js  -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
