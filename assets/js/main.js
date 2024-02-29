@@ -8,6 +8,7 @@ $(document).ready(function () {
     let cityName = $('.city-name');
     let humidityValue = $('.humidity-value');
     let windValue = $('.wind-value');
+    let temp = $('.temp');
 
     function fetchWeather(country, state, city) {
         let weatherAPIURL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=be65043bc12440c4cbe24a5249b7a8a7&units=metric`;
@@ -17,11 +18,41 @@ $(document).ready(function () {
             method: "GET",
             success: function (data) {
                 cityName.text(city);
-                humidityValue.data.humidity;
-                windValue.text(data.wind_speed);
-                weatherContent.find('.weather-img').attr('src', 'assets/images/' + data.weather_condition + '.png');
-                weatherContent.show();
+                temp.text(data.main.temp + ' °C');
+                humidityValue.text(data.main.humidity + '%');
+                windValue.text(data.wind.speed + ' Km/Hr');
 
+                let weatherCode = data.weather[0].id;
+                let weatherImgSrc = "";
+
+                if (weatherCode >= 200 && weatherCode < 300) {
+                    weatherImgSrc = "assets/images/drizzle.png";
+                } else if (weatherCode >= 300 && weatherCode < 400) {
+                    // Drizzle
+                    weatherImgSrc = "assets/images/mist.png";
+                } else if (weatherCode >= 500 && weatherCode < 600) {
+                    // Rain
+                    weatherImgSrc = "assets/images/rain.png";
+                } else if (weatherCode >= 600 && weatherCode < 700) {
+                    // Snow
+                    weatherImgSrc = "assets/images/snow.png";
+                } else if (weatherCode >= 700 && weatherCode < 800) {
+                    // Atmosphere
+                    weatherImgSrc = "assets/images/clear.png";
+                } else if (weatherCode === 800) {
+                    // Clear
+                    weatherImgSrc = "assets/images/mist.png";
+                } else if (weatherCode > 800 && weatherCode < 900) {
+                    // Clouds
+                    weatherImgSrc = "assets/images/clouds.png";
+                } else {
+                    // Default image
+                    // weatherImgSrc = "assets/images/clear.png";
+                }
+
+                $('.weather-img').attr('src', weatherImgSrc);
+
+                weatherContent.show();
             },
             error: function (error) {
                 console.error('Error fetching weather data:', error);
