@@ -1,39 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Weather App - README</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        line-height: 1.6;
-        padding: 20px;
-      }
-      h1, h2, h3 {
-        color: #2c3e50;
-      }
-      code {
-        background-color: #f4f4f4;
-        padding: 2px 5px;
-        border-radius: 3px;
-        font-size: 90%;
-        color: #e74c3c;
-      }
-      pre {
-        background-color: #f4f4f4;
-        padding: 10px;
-        border-radius: 3px;
-      }
-      img {
-        max-width: 100%;
-        height: auto;
-        display: block;
-        margin: 20px 0;
-      }
-    </style>
-  </head>
-  <body>
     <h1>Weather App - README</h1>
 
   <h2>Introduction</h2>
@@ -60,7 +24,7 @@
   <h3>Screenshots</h3>
   <p>Here are screenshots of different stages of the weather app in action:</p>
 
-  <img src="https://github.com/Niraj11Parihar/weatherapi/blob/205201d7825a733029b93ed33ee0d926064f4a8e/assets/images/ss/Screenshot%202024-10-17%20151251.png" alt="Weather App Screenshot 1">
+  <img src="https://github.com/Niraj11Parihar/weatherapi/blob/205201d7825a733029b93ed33ee0d926064f4a8e/assets/images/ss/Screenshot%202024-10-17%20151251.png" alt="Weather App  Screenshot 1">
     
   <img src="https://github.com/Niraj11Parihar/weatherapi/blob/205201d7825a733029b93ed33ee0d926064f4a8e/assets/images/ss/Screenshot%202024-10-17%20151310.png" alt="Weather App Screenshot 2">
     
@@ -68,7 +32,10 @@
 
   <h3>Working Video</h3>
     <p>You can view the app in action in the following video:</p>
-    <a href="https://github.com/Niraj11Parihar/weatherapi/blob/main/path-to-video.mp4" target="_blank">Watch the Weather App Video</a>
+    
+https://github.com/user-attachments/assets/82d49775-960e-4df9-8f25-28e7f06ca5cd
+
+
 
   <h2>How It Works</h2>
     <p>The app provides a user-friendly interface where the user selects the country, state, and city. After submission, the app fetches and displays the real-time weather data for the selected location using the OpenWeatherMap API.</p>
@@ -123,5 +90,3 @@
   <h2>License</h2>
     <p>This project is licensed under the MIT License - see the <a href="https://github.com/Niraj11Parihar/weatherapi/blob/main/LICENSE">LICENSE</a> file for details.</p>
 
-  </body>
-</html>
