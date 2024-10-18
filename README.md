@@ -1,4 +1,4 @@
-    <h1>Weather App - README</h1>
+<h1>Weather App - README</h1>
 
   <h2>Introduction</h2>
     <p>The Weather App allows users to check the current weather conditions of any selected city. Users can select a country, state, and city from dropdown menus, and upon submission, the app displays the current temperature, humidity, wind speed, and a corresponding weather icon.</p>
